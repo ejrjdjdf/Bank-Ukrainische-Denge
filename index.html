@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Ukrainische Denge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🏦 BANK UKRAINISCHE DENGE ☣️</h1>
+
+    <div id="auth-screen" class="bank-card">
+        <div class="tabs">
+            <button id="tab-login" class="active" onclick="switchTab('login')">Увійти</button>
+            <button id="tab-register" onclick="switchTab('register')">Реєстрація</button>
+        </div>
+
+        <h3 id="auth-title">Вхід у систему</h3>
+        
+        <input type="text" id="username" placeholder="Нікнейм (ENG)" pattern="[A-Za-z0-9]+" required>
+        <input type="password" id="pin" placeholder="ПІН-код (4 цифри)" maxlength="4" inputmode="numeric" required>
+
+        <button class="action-btn" id="main-btn" onclick="handleAuth()">Продовжити</button>
+    </div>
+
+    <div id="bank-screen" class="bank-card hidden">
+        <h2>Вітаємо, <span id="user-display-name">Користувач</span>!</h2>
+        <p>Ваш баланс: <span id="balance-value">0</span> DNG</p>
+        <hr>
+        <h4>Переказ коштів</h4>
+        <input type="text" id="transfer-to" placeholder="Кому (Нікнейм)">
+        <input type="number" id="transfer-amount" placeholder="Сума">
+        <button class="action-btn" onclick="makeTransfer()">Надіслати</button>
+        <br><br>
+        <button id="logout-btn" class="action-btn" onclick="logout()">Вийти</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

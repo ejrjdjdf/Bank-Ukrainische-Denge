@@ -1,0 +1,58 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background: #1a1a1a; 
+    color: #fff; 
+    text-align: center; 
+    padding-top: 50px; 
+}
+.bank-card { 
+    background: #2a2a2a; 
+    border: 2px solid #00ffcc; 
+    padding: 20px; 
+    display: inline-block; 
+    border-radius: 10px; 
+    width: 300px; 
+}
+.tabs button { 
+    background: #333; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin: 5px; 
+}
+.tabs button.active { 
+    background: #00ffcc; 
+    color: #000; 
+    font-weight: bold; 
+}
+input { 
+    width: 80%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 5px; 
+    border: none; 
+    text-align: center; 
+}
+.action-btn { 
+    background: #00ffcc; 
+    color: #000; 
+    border: none; 
+    padding: 10px 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    width: 85%; 
+    border-radius: 5px; 
+}
+#balance-value {
+    color: #00ffcc; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+#logout-btn {
+    background: #ff3333; 
+    color: white;
+}
+.hidden { 
+    display: none; 
+}
